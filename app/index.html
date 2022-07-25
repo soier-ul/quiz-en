@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Mentor — Quiz</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script defer src="js/main.min.js"></script>
+</head>
+
+<body>
+  <section class="quiz">
+    <h1 class="sr-only">Mental Mentor</h1>
+    <form class="quiz__list">
+      <div class="quiz__item quiz-item1">
+        <div class="quiz__item-top">
+          <a class="logo" href="/quiz">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+
+          <h2 class="quiz__question">
+            What changes would you like to see in your life?
+          </h2>
+
+          <span class="quiz__text">
+            You can choose several options
+          </span>
+        </div>
+
+        <ul class="quiz__question-list">
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="checkbox" name="Make my sleep better">
+              <span class="quiz__answer-text">Make my sleep better</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="checkbox" name="Become more confident">
+              <span class="quiz__answer-text">Become more confident</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="checkbox" name="Improve relationships with family">
+              <span class="quiz__answer-text">Improve relationships with family</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="checkbox" name="Reduce anxiety">
+              <span class="quiz__answer-text">Reduce anxiety</span>
+            </label>
+          </li>
+        </ul>
+
+        <button class="quiz__btn quiz__btn--links" disabled type="button">
+          Continue
+        </button>
+
+        <p class="quiz__info">
+          Read our
+          <a class="quiz__info-link" target="_blank" href="https://mentorhd.com/agreement/">
+            Terms of Use
+          </a>
+          and
+          <a class="quiz__info-link" target="_blank" href="https://mentorhd.com/policy/">
+            Privacy Policy
+          </a>.
+        </p>
+      </div>
+
+      <div class="quiz__item quiz-item2">
+        <div class="quiz__item-top">
+          <a class="logo" href="/quiz">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+
+          <h2 class="quiz__question">
+            How do you feel now?
+          </h2>
+
+          <span class="quiz__text">
+            You can choose several options
+          </span>
+        </div>
+
+        <ul class="quiz__question-list">
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="checkbox" name="I don't sleep well">
+              <span class="quiz__answer-text">I don't sleep well</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="checkbox" name="I have a lot of doubts in my life">
+              <span class="quiz__answer-text">I have a lot of doubts in my life</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="checkbox" name="I don't understand my family">
+              <span class="quiz__answer-text">I don't understand my family</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="checkbox" name="I worry a lot">
+              <span class="quiz__answer-text">I worry a lot</span>
+            </label>
+          </li>
+        </ul>
+
+        <button class="quiz__btn" disabled type="button">
+          Continue
+        </button>
+      </div>
+
+      <div class="quiz__item quiz-item3">
+        <div class="quiz__item-top">
+          <a class="logo" href="/quiz">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+
+          <h2 class="quiz__question">
+            What is your goal?
+          </h2>
+
+          <span class="quiz__text">
+            You can choose several options
+          </span>
+        </div>
+
+        <ul class="quiz__question-list">
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="checkbox" name="I want to fall asleep quickly and sleep well.">
+              <span class="quiz__answer-text">I want to fall asleep quickly and sleep well</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="checkbox" name="I want to believe in myself">
+              <span class="quiz__answer-text">I want to believe in myself</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="checkbox" name="I want to build a harmonious relationship">
+              <span class="quiz__answer-text">I want to build a harmonious relationship</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="checkbox" name="I want to get rid of anxiety">
+              <span class="quiz__answer-text">I want to get rid of anxiety</span>
+            </label>
+          </li>
+        </ul>
+
+        <button class="quiz__btn" disabled type="button">
+          Continue
+        </button>
+      </div>
+
+      <div class="quiz__item quiz-item4">
+        <div class="quiz__item-top quiz__item-top--congratulation">
+          <lottie-player class="quiz__animate" src="https://assets10.lottiefiles.com/packages/lf20_apnm2ob8.json"
+            background="transparent" speed="1" style="width: 235px; height: 310px;" loop autoplay>
+          </lottie-player>
+          <h2 class="quiz__congratulation">
+            <span>Congratulations!</span>
+            You have set your first goal!
+          </h2>
+        </div>
+
+        <button class="quiz__btn" type="button">
+          Continue
+        </button>
+      </div>
+
+      <div class="quiz__item quiz-item5">
+        <div class="quiz__item-top">
+          <a class="logo" href="/quiz">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+
+          <h2 class="quiz__question">
+            What is your gender?
+          </h2>
+
+          <span class="quiz__text">
+            It will help us to figure out which practices suit you
+          </span>
+        </div>
+
+        <ul class="quiz__question-list" id="gender">
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" id="female" value="female" type="radio" name="gender">
+              <span class="quiz__answer-text">Female</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" id="male" value="male" type="radio" name="gender">
+              <span class="quiz__answer-text">Male</span>
+            </label>
+          </li>
+        </ul>
+
+        <button class="quiz__btn" disabled type="button">
+          Continue
+        </button>
+      </div>
+
+      <div class="quiz__item quiz-item6">
+        <div class="quiz__item-top">
+          <a class="logo" href="/quiz">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+
+          <h2 class="quiz__question">
+            How old are you?
+          </h2>
+
+          <span class="quiz__text">
+            This will help us to figure out which practices best suit you
+          </span>
+        </div>
+
+        <ul class="quiz__question-list quiz__question-list--age" id="age">
+          <li class="quiz__option quiz__option--age">
+            <label class="quiz__label">
+              <input class="quiz__answer-age" type="number" name="age" placeholder=" ">
+            </label>
+          </li>
+        </ul>
+
+        <button class="quiz__btn quiz__btn-age" disabled type="button">
+          Continue
+        </button>
+      </div>
+
+      <div class="quiz__item quiz-item7">
+        <div class="quiz__item-top">
+          <a class="logo" href="/quiz">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+
+          <h2 class="quiz__question">
+            What may prevent you from achieving your goal?
+          </h2>
+
+          <span class="quiz__text">
+            You can choose several options
+          </span>
+        </div>
+
+        <ul class="quiz__question-list">
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="checkbox" name="Lack of motivation">
+              <span class="quiz__answer-text">Lack of motivation</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="checkbox" name="Lack of time">
+              <span class="quiz__answer-text">Lack of time</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="checkbox" name="Lack of clear results">
+              <span class="quiz__answer-text">Lack of clear results</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer-other" type="text" name="other1" placeholder="Enter your answer">
+              <span class="quiz__answer-other_text">
+                Other
+              </span>
+            </label>
+          </li>
+        </ul>
+
+        <button class="quiz__btn quiz__btn-other" disabled type="button">
+          Continue
+        </button>
+      </div>
+
+      <div class="quiz__item quiz-item8">
+        <div class="quiz__item-top">
+          <a class="logo" href="/quiz">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+
+          <h2 class="quiz__question">
+            Here's a quite interesting fact
+          </h2>
+
+          <span class="quiz__text">
+            This graph clearly shows how meditation practices affect mood swings
+          </span>
+        </div>
+
+        <div class="quiz__graph">
+          <img class="quiz__graph-img" src="images/graph.jpg" width="680" height="372"
+            alt="April 2020 Mentor Mentor survey">
+
+          <p class="quiz__graph-info">
+            76.9% of our users have become more attentive to their emotions after a month of regular meditation practice
+            <span>
+              April 2020 Mentor Mentor survey
+            </span>
+          </p>
+        </div>
+
+        <button class="quiz__btn" type="button">
+          Continue
+        </button>
+      </div>
+
+      <div class="quiz__item quiz-item9">
+        <div class="quiz__item-top">
+          <a class="logo" href="/quiz">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+
+          <h2 class="quiz__question">
+            What do you want to work on first with meditation and affirmation practices?
+          </h2>
+
+          <span class="quiz__text">
+            You can choose several options
+          </span>
+        </div>
+
+        <ul class="quiz__question-list">
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="checkbox" name="Physical state">
+              <span class="quiz__answer-text">Physical state</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="checkbox" name="Mental attitude">
+              <span class="quiz__answer-text">Mental attitude</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="checkbox" name="Emotional background">
+              <span class="quiz__answer-text">Emotional background</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer-other" type="text" name="other2" placeholder="Enter your answer">
+              <span class="quiz__answer-other_text">
+                Other
+              </span>
+            </label>
+          </li>
+        </ul>
+
+        <button class="quiz__btn quiz__btn-other" disabled type="button">
+          Continue
+        </button>
+      </div>
+
+      <div class="quiz__item quiz-item10">
+        <div class=" quiz__item-top">
+          <a class="logo" href="/quiz">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+
+          <h2 class="quiz__question">
+            How much time per day can you devote to practice?
+          </h2>
+        </div>
+
+        <ul class="quiz__question-list">
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="radio" name="time">
+              <span class="quiz__answer-text">Less than 5 minutes</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="radio" name="time">
+              <span class="quiz__answer-text">10-15 minutes</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="radio" name="time">
+              <span class="quiz__answer-text">20 minutes</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="radio" name="time">
+              <span class="quiz__answer-text">More than 30 minutes</span>
+            </label>
+          </li>
+        </ul>
+
+        <button class="quiz__btn" disabled type="button">
+          Continue
+        </button>
+      </div>
+
+      <div class="quiz__item quiz-item11">
+        <div class=" quiz__item-top">
+          <a class="logo" href="/quiz">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+
+          <h2 class="quiz__question">
+            Here is your individual training program
+          </h2>
+
+          <p class="quiz__result">
+            To you, as a
+            <span class="quiz__result-gender">
+              woman
+            </span>
+            aged
+            <span class="quiz__result-age">
+              30
+            </span>
+            years old who seeks to improve your mental health, we advise a special program with motivational
+            affirmations and relaxing meditations. It is designed with your condition in mind.
+          </p>
+
+          <ul class="quiz__result-list">
+            <li class="quiz__result-item quiz__result-item--meditation">
+              <span class="quiz__result-text">
+                Meditations for relaxation and falling asleep easily
+              </span>
+            </li>
+
+            <li class="quiz__result-item quiz__result-item--affirmations">
+              <span class="quiz__result-text">
+                Self-esteem affirmations for building confidence
+              </span>
+            </li>
+
+            <li class="quiz__result-item quiz__result-item--articles">
+              <span class="quiz__result-text">
+                Articles with tips for your practices
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <button class="quiz__btn" type="button">
+          Continue
+        </button>
+      </div>
+
+      <div class="quiz__item quiz-item12">
+        <div class="quiz__item-top">
+          <a class="logo" href="/quiz">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+
+          <h2 class="quiz__question">
+            After reading this, what's your mood now?
+          </h2>
+
+          <span class="quiz__text">
+            You can choose several options
+          </span>
+        </div>
+
+        <ul class="quiz__question-list">
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="checkbox" name="Inspired">
+              <span class="quiz__answer-text">Inspired</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="checkbox" name="Confident">
+              <span class="quiz__answer-text">Confident</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer" type="checkbox" name="Enthusiastic">
+              <span class="quiz__answer-text">Enthusiastic</span>
+            </label>
+          </li>
+
+          <li class="quiz__option">
+            <label class="quiz__label">
+              <input class="quiz__answer-other" type="text" name="other3" placeholder="Enter your answer">
+              <span class="quiz__answer-other_text">
+                Other
+              </span>
+            </label>
+          </li>
+        </ul>
+
+        <button class="quiz__btn quiz__btn-other" disabled type="button">
+          Continue
+        </button>
+      </div>
+
+      <div class="quiz__item quiz-item13">
+        <div class="loader">
+          <lottie-player class="loader__icon" src="https://assets8.lottiefiles.com/packages/lf20_8sdbkkp7.json"
+            background="transparent" speed="1" style="width: 265px; height: 265px;" loop autoplay>
+          </lottie-player>
+          <h2 class="loader__title title">
+            We are ready to
+            <span>open your personal program...</span>
+          </h2>
+        </div>
+      </div>
+
+      <div class="quiz__item quiz__item--end quiz-item14">
+        <div class="timer">
+          <div class="timer__inner">
+            <a class="logo" href="/quiz">
+              <img class="logo__img" src="images/logo.svg" alt="logo">
+            </a>
+
+            <h2 class="timer__title title">
+              Your individual training program is saved for the next 15 minutes
+            </h2>
+
+            <div class="time-count" id="timer">
+              <div class="time-count__val">
+                <span class="time-count__val-num minutes"></span>
+              </div>
+
+              <div class="time-count__val">
+                <span class="time-count__val-num seconds"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scheme">
+          <div class="scheme__inner">
+            <h2 class="scheme__title title">
+              With the topics covered in these practices, you'll get results quickly:
+            </h2>
+
+            <ul class="scheme__list">
+              <li class="scheme__item scheme__item--change">
+                <span class="scheme__days scheme__days--change">
+                  Today
+                </span>
+
+                <span class="scheme__text">
+                  You decided to change your life
+                </span>
+              </li>
+
+              <li class="scheme__item scheme__item--relax">
+                <span class="scheme__days scheme__days--relax">
+                  7 days
+                </span>
+
+                <span class="scheme__text">
+                  You'll learn to relax
+                </span>
+              </li>
+
+              <li class="scheme__item scheme__item--energy">
+                <span class="scheme__days scheme__days--energy">
+                  14 days
+                </span>
+
+                <span class="scheme__text">
+                  You'll gain inner energy
+                </span>
+              </li>
+
+              <li class="scheme__item">
+                <span class="scheme__days">
+                  21 days
+                </span>
+
+                <span class="scheme__text">
+                  You'll achieve your goals
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="clients">
+          <div class="clients__inner">
+            <h2 class="clients__title title">
+              We have asked our users to take photos before and after regular practices
+            </h2>
+
+            <ul class="clients__list">
+              <li class="clients__item">
+                <h3 class="clients__item-title">
+                  Kamila
+                </h3>
+                <div class="clients__item-images">
+                  <div class="clients__img-wrap">
+                    <img class="clients__img" src="images/clients/1.png" alt="A photo before the regular practice">
+                    <div class="clients__text">
+                      A photo before the regular practice
+                    </div>
+                  </div>
+                  <div class="clients__img-wrap">
+                    <img class="clients__img" src="images/clients/2.png" alt="After 6 weeks of practice">
+                    <div class="clients__text">
+                      After 6 weeks of practice
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="clients__item">
+                <h3 class="clients__item-title">
+                  Monika
+                </h3>
+                <div class="clients__item-images">
+                  <div class="clients__img-wrap">
+                    <img class="clients__img" src="images/clients/3.png" alt="A photo before the regular practice">
+                    <div class="clients__text">
+                      A photo before the regular practice
+                    </div>
+                  </div>
+                  <div class="clients__img-wrap">
+                    <img class="clients__img" src="images/clients/4.png" alt="After 6 weeks of practice">
+                    <div class="clients__text">
+                      After 6 weeks of practice
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="clients__item">
+                <h3 class="clients__item-title">
+                  Alex
+                </h3>
+                <div class="clients__item-images">
+                  <div class="clients__img-wrap">
+                    <img class="clients__img" src="images/clients/5.png" alt="A photo before the regular practice">
+                    <div class="clients__text">
+                      A photo before the regular practice
+                    </div>
+                  </div>
+                  <div class="clients__img-wrap">
+                    <img class="clients__img" src="images/clients/6.png" alt="After 6 weeks of practice">
+                    <div class="clients__text">
+                      After 6 weeks of practice
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="clients__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="clients__slide swiper-slide">
+                  <div class="clients__slide-content">
+                    <div class="clients__item-images">
+                      <div class="clients__img-wrap">
+                        <img class="clients__img" src="images/clients/1.png" alt="A photo before the regular practice">
+                        <div class="clients__text">
+                          A photo before the regular practice
+                        </div>
+                      </div>
+                      <div class="clients__img-wrap">
+                        <img class="clients__img" src="images/clients/2.png" alt="After 6 weeks of practice">
+                        <div class="clients__text">
+                          After 6 weeks of practice
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="clients__slide swiper-slide">
+                  <div class="clients__slide-content">
+                    <div class="clients__item-images">
+                      <div class="clients__img-wrap">
+                        <img class="clients__img" src="images/clients/3.png" alt="A photo before the regular practice">
+                        <div class="clients__text">
+                          A photo before the regular practice
+                        </div>
+                      </div>
+                      <div class="clients__img-wrap">
+                        <img class="clients__img" src="images/clients/4.png" alt="After 6 weeks of practice">
+                        <div class="clients__text">
+                          After 6 weeks of practice
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="clients__slide swiper-slide">
+                  <div class="clients__slide-content">
+                    <div class="clients__item-images">
+                      <div class="clients__img-wrap">
+                        <img class="clients__img" src="images/clients/5.png" alt="A photo before the regular practice">
+                        <div class="clients__text">
+                          A photo before the regular practice
+                        </div>
+                      </div>
+                      <div class="clients__img-wrap">
+                        <img class="clients__img" src="images/clients/6.png" alt="After 6 weeks of practice">
+                        <div class="clients__text">
+                          After 6 weeks of practice
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+
+              <div class="clients__arrow clients__arrow--prev swiper-button-prev"></div>
+              <div class="clients__arrow clients__arrow--next swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="algorithm">
+          <div class="algorithm__inner">
+            <h2 class="algorithm__title title">
+              This is how to make progress on your goals consistently
+            </h2>
+
+            <ul class="algorithm__list">
+              <li class="algorithm__item">
+                <span class="algorithm__num">
+                  1
+                </span>
+                <span class="algorithm__text">
+                  Releasing physical tension
+                </span>
+              </li>
+
+              <li class="algorithm__item">
+                <span class="algorithm__num">
+                  2
+                </span>
+                <span class="algorithm__text">
+                  Changing negative attitudes
+                </span>
+              </li>
+
+              <li class="algorithm__item">
+                <span class="algorithm__num">
+                  3
+                </span>
+                <span class="algorithm__text">
+                  Creating a positive outlook
+                </span>
+              </li>
+
+              <li class="algorithm__item">
+                <span class="algorithm__num">
+                  4
+                </span>
+                <span class="algorithm__text">
+                  Acceptance of your feelings and thoughts
+                </span>
+              </li>
+
+              <li class="algorithm__item">
+                <span class="algorithm__num">
+                  5
+                </span>
+                <span class="algorithm__text">
+                  Changes in thinking and mood
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="reviews">
+          <div class="reviews__inner">
+            <h2 class="reviews__title title">
+              Feedback from users who are on the road to doing even better.
+            </h2>
+
+            <div class="reviews__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="reviews__slide swiper-slide">
+                  <div class="reviews__slide-content">
+                    <img class="reviews__avatar" src="images/reviews/1.png" alt="Агата">
+
+                    <p class="reviews__text">
+                      The Mental Mentor affirmations help me calm down and feel more confident and energetic. In
+                      addition, it motivates me to practice no matter where I am.
+                    </p>
+
+                    <span class="reviews__name">
+                      Liam, 32
+                    </span>
+                  </div>
+                </div>
+
+                <div class="reviews__slide swiper-slide">
+                  <div class="reviews__slide-content">
+                    <img class="reviews__avatar" src="images/reviews/2.png" alt="Агата">
+
+                    <p class="reviews__text">
+                      Meditation helped me get out of a problematic psychological state. I suffered from anxiety and
+                      depression for a long time and went to psychotherapists. Every day, I listen to practices on
+                      health and how to manage emotions.
+                    </p>
+
+                    <span class="reviews__name">
+                      Monica, 25
+                    </span>
+                  </div>
+                </div>
+
+                <div class="reviews__slide swiper-slide">
+                  <div class="reviews__slide-content">
+                    <img class="reviews__avatar" src="images/reviews/3.png" alt="Агата">
+
+                    <p class="reviews__text">
+                      I suffered my entire life terribly from a restless sleep. However, thanks to my Mental Mentor's
+                      meditations, I gradually adjusted my sleep, and now I wake up much less often in the middle of the
+                      night.
+                    </p>
+
+                    <span class="reviews__name">
+                      Alex, 44
+                    </span>
+                  </div>
+                </div>
+
+                <div class="reviews__slide swiper-slide">
+                  <div class="reviews__slide-content">
+                    <img class="reviews__avatar" src="images/reviews/4.png" alt="Матео">
+
+                    <p class="reviews__text">
+                      Every day I struggle with mood swings. Even a little practice of affirmations is a great help.
+                      They calm me down, allow me to believe in the best, and trust those around me.
+                    </p>
+
+                    <span class="reviews__name">
+                      Ava, 28
+                    </span>
+                  </div>
+                </div>
+
+                <div class="reviews__slide swiper-slide">
+                  <div class="reviews__slide-content">
+                    <img class="reviews__avatar" src="images/reviews/5.png" alt="Рената, 44">
+
+                    <p class="reviews__text">
+                      Thanks to meditation, I realized what I wanted to do in life. The future always seemed scary to
+                      me. Practices helped me listen to myself and my desires. Now I'm going to turn everything I've
+                      realized into goals.
+                    </p>
+
+                    <span class="reviews__name">
+                      Aiden, 26
+                    </span>
+                  </div>
+                </div>
+
+                <div class="reviews__slide swiper-slide">
+                  <div class="reviews__slide-content">
+                    <img class="reviews__avatar" src="images/reviews/6.png" alt="Тео, 27">
+
+                    <p class="reviews__text">
+                      Negative emotions tormented me for a long time. It made me a very unfriendly conversationalist, so
+                      I decided to try affirmations and meditation. So now, every morning, I tune in with a positive
+                      attitude. The practices helped to change my way of thinking!
+                    </p>
+
+                    <span class="reviews__name">
+                      Charlotte, 37
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reivews__swiper-pagination swiper-pagination"></div>
+
+              <div class="reviews__arrow reviews__arrow--prev swiper-button-prev"></div>
+              <div class="reviews__arrow reviews__arrow--next swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="purchase">
+          <div class="purchase__inner">
+            <h2 class="purchase__title title">
+              Take the first step toward your dream
+            </h2>
+
+            <span class="purchase__text">
+              Mental Mentor will help you realize your goals, and you will keep going no matter the obstacles in your
+              way!
+            </span>
+
+            <span class="purchase__price">
+              Get one month for <span>$1</span>
+            </span>
+            <span class="purchase__price-info">
+              The first month costs 1 dollars, then 9.99 dollars/month. The subscription will renew automatically.
+            </span>
+
+            <a class="purchase__link" href="https://mentorhdapp.com/?ref=quiz/">
+              Start now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz__item quiz-item15">
+        <div class="purchase">
+          <div class="purchase__inner">
+            <h2 class="purchase__title title">
+              Take the first step toward your dream
+            </h2>
+
+            <span class="purchase__text">
+              Mental Mentor will help you realize your goals, and you will keep going no matter the obstacles in your
+              way!
+            </span>
+
+            <span class="purchase__price">
+              Get one month for <span>$1</span>
+            </span>
+            <span class="purchase__price-info">
+              The first month costs 1 dollars, then 9.99 dollars/month. The subscription will renew automatically.
+            </span>
+
+            <a class="purchase__link" id="reload-link" href="#">
+              Take test again
+            </a>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+</body>
+
+</html>
